@@ -3,16 +3,15 @@ Rails.application.routes.draw do
 
   resources :projects
 
-  <%# resources :projects give us all the following routes automatically
+  # resources :projects give us all the following routes automatically
   
-  get "/projects", to: "projects#index"
-  get "/projects/new", to: "projects#new", as: "new_project"
-  get "/projects/:id", to: "projects#show", as: "project"
-  get "/projects/:id/edit", to: "projects#edit", as: "edit_project"
-  post "./projects", to: "projects#create"
-  patch "/projects/:id", to "projects#update"
-  delete "/projects/:id", to "projects#destroy"
-  %>
+  #get "/projects", to: "projects#index"
+  #get "/projects/new", to: "projects#new", as: "new_project"
+  #get "/projects/:id", to: "projects#show", as: "project"
+  #get "/projects/:id/edit", to: "projects#edit", as: "edit_project"
+  #post "./projects", to: "projects#create"
+  #patch "/projects/:id", to "projects#update"
+  #delete "/projects/:id", to "projects#destroy"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -25,5 +24,5 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "projects#index"
 end
